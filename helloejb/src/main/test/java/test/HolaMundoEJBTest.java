@@ -21,7 +21,7 @@ public class HolaMundoEJBTest {
         System.out.println("Iniciando EJB Container");
         contenedor = EJBContainer.createEJBContainer(); // Iniciamos el contenedor embebido de glassfish
         contexto = contenedor.getContext(); // Recuperamos el contexto para ejecutar el EJB
-        ejb = (HolaMundoEJB) contexto.lookup("java:global/classes/HolaMundoEJB!beans.HolaMundoEJB"); // Via jndi solicitamos una referencia del EJB. 
+        ejb = (HolaMundoEJB) contexto.lookup("java:global/classes/HolaMundoEJB!beans.HolaMundoEJB"); // Via jndi solicitamos una referencia del EJB.
     }
 
     @Test
@@ -31,7 +31,6 @@ public class HolaMundoEJBTest {
         int resultado = ejb.sumar(dato1, dato2);
         assertEquals((dato1 + dato2), resultado);
         System.out.println("Operación terminada, resultado: " + resultado);
-
     }
 
 
