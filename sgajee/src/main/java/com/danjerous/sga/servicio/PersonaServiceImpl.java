@@ -2,8 +2,10 @@ package com.danjerous.sga.servicio;
 
 import com.danjerous.sga.domain.Persona;
 
+import javax.ejb.Stateless;
 import java.util.List;
 
+@Stateless
 public class PersonaServiceImpl implements PersonaServiceRemote {
     @Override
     public List<Persona> listarPersonas() {
