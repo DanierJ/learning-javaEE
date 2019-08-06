@@ -13,13 +13,13 @@ public class PersonaServiceImpl implements PersonaServiceRemote {
     }
 
     @Override
-    public void encontrarPersonaPorId(Persona persona) {
-
+    public Persona encontrarPersonaPorId(Persona persona) {
+        return null;
     }
 
     @Override
-    public void encontrarPersonaPorEmail(Persona persona) {
-
+    public Persona encontrarPersonaPorEmail(Persona persona) {
+        return null;
     }
 
     @Override

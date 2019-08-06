@@ -12,8 +12,8 @@ import java.util.List;
 public interface PersonaServiceRemote {
 
     List<Persona> listarPersonas();
-    void encontrarPersonaPorId(Persona persona);
-    void encontrarPersonaPorEmail(Persona persona);
+    Persona encontrarPersonaPorId(Persona persona);
+    Persona encontrarPersonaPorEmail(Persona persona);
 
     void registrarPersona(Persona persona);
     void modificarPersona(Persona persona);
