@@ -1,0 +1,4 @@
+com\danjerous\sga\domain\Persona.class
+com\danjerous\sga\servicio\PersonaServiceImpl.class
+com\danjerous\sga\servicio\PersonaServiceRemote.class
+com\danjerous\sga\cliente\ClientePersonaService.class

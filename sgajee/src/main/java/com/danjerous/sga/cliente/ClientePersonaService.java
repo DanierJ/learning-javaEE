@@ -8,7 +8,10 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.util.List;
 
-
+/**
+ * El ejb se encuentra en el server de glassfish
+ * Por lo que necesitamos primero desplegar el EJB en el servidor y luego hacer la llamada en el cliente.
+ */
 public class ClientePersonaService {
     public static void main(String[] args) {
 
@@ -29,6 +32,10 @@ public class ClientePersonaService {
         } catch (NamingException e) {
             e.printStackTrace();
         }
+
+        /**
+         * Para desplegar el fucking ejb en el servidor de glassfish: Generas el jar del ejb. Abres el admin console de glassfish y te metes en aplicaciones, luegos le das en deploy a esa vaina y en la segunda opción especificas la ruta del jar.
+         */
 
     }
 }
