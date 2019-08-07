@@ -20,6 +20,19 @@ public class Persona {
     @Column(nullable = false, length = 30)
     private String telefono;
 
+    public Persona() {}
+
+    public Persona(int idPersona) {
+        this.id = idPersona;
+    }
+
+    public Persona(String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
+        this.nombre = nombre;
+        this.apePaterno = apePaterno;
+        this.apeMaterno = apeMaterno;
+        this.email = email;
+        this.telefono = telefono;
+    }
 
     public int getId() {
         return id;
