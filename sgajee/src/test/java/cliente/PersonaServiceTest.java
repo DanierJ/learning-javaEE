@@ -7,8 +7,10 @@ import org.junit.Test;
 
 import javax.ejb.embeddable.EJBContainer;
 import javax.naming.Context;
-
+import java.io.File;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -21,7 +23,12 @@ public class PersonaServiceTest {
     @Before
     public void setUp() throws Exception {
         System.out.println("Iniciando EJB Container");
-         container = EJBContainer.createEJBContainer();
+        /**My personal experience with running such test in eclipse as a standalone JUnit (not via maven test) is
+         * is to use overloaded version of createEJBContainer, in which developer has to specify where to find the compiled bean classes.
+         */
+        Map<String, Object> properties = new HashMap<>();
+         properties.put(EJBContainer.MODULES, new File("target/classes"));
+         container = EJBContainer.createEJBContainer(properties);
          context =  container.getContext();
          personaService = (PersonaService) context.lookup("java:global/classes/PersonaServiceImpl!com.danjerous.sga.servicio.PersonaService");
     }
