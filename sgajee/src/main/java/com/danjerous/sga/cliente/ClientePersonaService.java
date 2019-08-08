@@ -34,7 +34,7 @@ public class ClientePersonaService {
         }
 
         /**
-         * Para desplegar el fucking ejb en el servidor de glassfish: Generas el jar del ejb. Abres el admin console de glassfish y te metes en aplicaciones, luegos le das en deploy a esa vaina y en la segunda opción especificas la ruta del jar.
+         * Para desplegar el fucking ejb en el servidor de glassfish: Generas el jar del ejb. Abres el admin console de glassfish y te metes en aplicaciones, luego le das en deploy a esa vaina y en la segunda opción especificas la ruta del jar.
          */
 
     }
