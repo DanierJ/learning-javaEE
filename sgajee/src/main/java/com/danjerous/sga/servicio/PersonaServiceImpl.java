@@ -1,51 +1,46 @@
 package com.danjerous.sga.servicio;
 
 import com.danjerous.sga.domain.Persona;
+import com.danjerous.sga.eis.PersonaDAO;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
 public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService {
+
+    @EJB
+    private PersonaDAO personaDAO;
+
     @Override
     public List<Persona> listarPersonas() {
-
-
-        List<Persona> listadoPersona = new ArrayList<>();
-
-        listadoPersona.add(new Persona(1, "Danier", "Martinez", "Camacho", "dan@j.com", "222555"));
-        listadoPersona.add(new Persona(2, "Julian", "Cuestas", "Mora", "julian@j.com", "222555"));
-        listadoPersona.add(new Persona(3, "Mario", "Vasquez", "joderSeMeOlvido", "mar@v.com", "222555"));
-        listadoPersona.add(new Persona(4, "Poncho", "??", "???", "ponchis", "222555"));
-        listadoPersona.add(new Persona(5, "Isaac", "Amortegui", "Cuervo", "isaac.com", "222555"));
-
-        return listadoPersona;
+        return personaDAO.findAllPersonas();
 
     }
 
     @Override
     public Persona encontrarPersonaPorId(Persona persona) {
-        return null;
+        return personaDAO.findPersonaById(persona);
     }
 
     @Override
     public Persona encontrarPersonaPorEmail(Persona persona) {
-        return null;
+        return personaDAO.findPersonaByEmail(persona);
     }
 
     @Override
     public void registrarPersona(Persona persona) {
-
+        personaDAO.insertPersona(persona);
     }
 
     @Override
     public void modificarPersona(Persona persona) {
-
+        personaDAO.updatePersona(persona);
     }
 
     @Override
     public void eliminarPersona(Persona persona) {
-
+        personaDAO.deletePersona(persona);
     }
 }
