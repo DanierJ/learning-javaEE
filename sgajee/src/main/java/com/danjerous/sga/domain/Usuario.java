@@ -23,6 +23,10 @@ public class Usuario implements Serializable {
     public Usuario() {
     }
 
+    public Usuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
     public Usuario(String username, String password, Persona persona) {
         this.username = username;
         this.password = password;
@@ -33,6 +37,8 @@ public class Usuario implements Serializable {
         this.username = username;
         this.password = password;
     }
+
+
 
     public Usuario(int idUsuario, String username, String password, Persona persona) {
         this.idUsuario = idUsuario;
