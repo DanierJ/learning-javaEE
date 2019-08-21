@@ -5,9 +5,11 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="PersonaPU" value="284c00a3-87e7-43af-89a9-292ffd14f2dc" />
+          <factory-entry name="PersonaPU" value="3df4ea28-62ec-4623-b768-46febf76d3ae" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="PersonaPU" />
+        </naming-strategy-map>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />
       </configuration>
     </facet>

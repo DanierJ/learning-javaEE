@@ -2,6 +2,8 @@ package com.danjerous.sga.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Collection;
+import java.util.Objects;
 
 
 @Entity
@@ -9,8 +11,7 @@ import java.io.Serializable;
 @Table(name = "persona")
 public class Persona implements Serializable {
 
-    private long serialVersionUID = 1L;
-
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_persona")
@@ -31,10 +32,14 @@ public class Persona implements Serializable {
     @Column(nullable = false, length = 30)
     private String telefono;
 
-    private static final long serialVersionUID = 1L;
-
+    @OneToMany(mappedBy = "persona")
+    private Collection<Usuario> usuarios;
 
     public Persona() {
+    }
+
+    public Persona(int idPersona) {
+        this.idPersona = idPersona;
     }
 
     public Persona(int idPersona, String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
@@ -46,6 +51,7 @@ public class Persona implements Serializable {
         this.telefono = telefono;
     }
 
+
     public Persona(String nombre, String apePaterno, String apeMaterno, String email, String telefono) {
         this.nombre = nombre;
         this.apePaterno = apePaterno;
@@ -53,7 +59,6 @@ public class Persona implements Serializable {
         this.email = email;
         this.telefono = telefono;
     }
-
 
     public int getIdPersona() {
         return idPersona;
@@ -113,5 +118,32 @@ public class Persona implements Serializable {
                 ", email='" + email + '\'' +
                 ", telefono='" + telefono + '\'' +
                 '}';
+    }
+
+
+    public Collection<Usuario> getUsuarios() {
+        return usuarios;
+    }
+
+    public void setUsuarios(Collection<Usuario> usuariosByIdPersona) {
+        this.usuarios = usuariosByIdPersona;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;
+        return idPersona == persona.idPersona &&
+                nombre.equals(persona.nombre) &&
+                apePaterno.equals(persona.apePaterno) &&
+                apeMaterno.equals(persona.apeMaterno) &&
+                email.equals(persona.email) &&
+                telefono.equals(persona.telefono);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(idPersona, nombre, apePaterno, apeMaterno, email, telefono);
     }
 }
