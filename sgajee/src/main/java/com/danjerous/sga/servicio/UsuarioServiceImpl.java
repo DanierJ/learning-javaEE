@@ -4,8 +4,10 @@ import com.danjerous.sga.domain.Usuario;
 import com.danjerous.sga.eis.UsuarioDAO;
 
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import java.util.List;
 
+@Stateless
 public class UsuarioServiceImpl implements UsuarioService, UsuarioServiceRemote {
 
     @EJB
