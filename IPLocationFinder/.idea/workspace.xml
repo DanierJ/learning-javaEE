@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="644755ab-1ab3-43bd-a7ac-0ef5ca444b4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../holamundojee/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../holamundojee/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../holamundojee/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/generated-sources/annotations/com/danjerous/sga/domain/Persona_.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/generated-sources/annotations/com/danjerous/sga/domain/Persona_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/sga-jee.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/sga-jee.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/surefire-reports/TEST-cliente.PersonaServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/surefire-reports/TEST-cliente.PersonaServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sgajee/target/surefire-reports/cliente.PersonaServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../sgajee/target/surefire-reports/cliente.PersonaServiceTest.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Danier Javid\Desktop\javaEE\IPLocationFinder\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PQ9gWNp859O2clTRMghPw5pZ1W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/lavasoft" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Danier Javid\Desktop\javaEE\IPLocationFinder\src\com\lavasoft" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.danjerous.Main" />
+      <module name="IPLocationFinder" />
+      <option name="PROGRAM_PARAMETERS" value="UUEE" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="644755ab-1ab3-43bd-a7ac-0ef5ca444b4b" name="Default Changelist" comment="" />
+      <created>1565795564977</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565795564977</updated>
+      <workItem from="1565795573402" duration="3383000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

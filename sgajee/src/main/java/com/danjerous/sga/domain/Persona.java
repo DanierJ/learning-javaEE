@@ -8,6 +8,9 @@ import java.io.Serializable;
 @NamedQueries({@NamedQuery(name = "Persona.findAll", query = "SELECT p FROM Persona p ORDER BY p.idPersona")})
 @Table(name = "persona")
 public class Persona implements Serializable {
+
+    private long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_persona")

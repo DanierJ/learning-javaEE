@@ -40,7 +40,7 @@ public class PersonaServiceTest {
 
         assertNotNull(personaService);
 
-        assertEquals(2, personaService.listarPersonas().size());
+        assertEquals(3, personaService.listarPersonas().size());
 
         System.out.println("El no. de personas es igual a: " + personaService.listarPersonas().size());
 
