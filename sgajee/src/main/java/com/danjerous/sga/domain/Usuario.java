@@ -89,8 +89,8 @@ public class Usuario implements Serializable {
         return persona;
     }
 
-    public void setPersona(Persona personaByIdPersona) {
-        this.persona = personaByIdPersona;
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 
     @Override

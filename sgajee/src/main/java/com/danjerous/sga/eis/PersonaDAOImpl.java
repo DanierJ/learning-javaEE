@@ -16,12 +16,12 @@ public class PersonaDAOImpl implements PersonaDAO {
 
     @SuppressWarnings("unchecked")
     @Override
-    public List<Persona> findAllPersonas() {
+    public List<Persona> findAll() {
         return entityManager.createNamedQuery("Persona.findAll").getResultList();
     }
 
     @Override
-    public Persona findPersonaById(Persona persona) {
+    public Persona findById(Persona persona) {
        return entityManager.find(Persona.class, persona.getIdPersona());
     }
 
@@ -34,17 +34,17 @@ public class PersonaDAOImpl implements PersonaDAO {
     }
 
     @Override
-    public void insertPersona(Persona persona) {
+    public void insert(Persona persona) {
         entityManager.persist(persona);
     }
 
     @Override
-    public void updatePersona(Persona persona) {
+    public void update(Persona persona) {
         entityManager.merge(persona);
     }
 
     @Override
-    public void deletePersona(Persona persona) {
+    public void delete(Persona persona) {
         entityManager.merge(persona);
         entityManager.remove(persona);
     }

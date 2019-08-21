@@ -15,13 +15,13 @@ public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService 
 
     @Override
     public List<Persona> listarPersonas() {
-        return personaDAO.findAllPersonas();
+        return personaDAO.findAll();
 
     }
 
     @Override
     public Persona encontrarPersonaPorId(Persona persona) {
-        return personaDAO.findPersonaById(persona);
+        return personaDAO.findById(persona);
     }
 
     @Override
@@ -31,16 +31,16 @@ public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService 
 
     @Override
     public void registrarPersona(Persona persona) {
-        personaDAO.insertPersona(persona);
+        personaDAO.insert(persona);
     }
 
     @Override
     public void modificarPersona(Persona persona) {
-        personaDAO.updatePersona(persona);
+        personaDAO.update(persona);
     }
 
     @Override
     public void eliminarPersona(Persona persona) {
-        personaDAO.deletePersona(persona);
+        personaDAO.delete(persona);
     }
 }
