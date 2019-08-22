@@ -19,7 +19,8 @@ public class ClientePersonaService {
 
         try {
             Context jndi = new InitialContext();
-            PersonaServiceRemote personaService =  (PersonaServiceRemote) jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.danjerous.sga.servicio.PersonaServiceRemote");
+            // PersonaServiceRemote personaService =  (PersonaServiceRemote) jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.danjerous.sga.servicio.PersonaServiceRemote");
+            PersonaServiceRemote personaService =  (PersonaServiceRemote) jndi.lookup("java:global/sga-web/PersonaServiceImpl!com.danjerous.sga.servicio.PersonaServiceRemote");
 
             List<Persona> listadoPersona = personaService.listarPersonas();
 

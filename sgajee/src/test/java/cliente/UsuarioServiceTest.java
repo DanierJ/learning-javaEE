@@ -4,8 +4,6 @@ import com.danjerous.sga.domain.Persona;
 import com.danjerous.sga.domain.Usuario;
 import com.danjerous.sga.servicio.PersonaService;
 import com.danjerous.sga.servicio.UsuarioService;
-import org.junit.Before;
-import org.junit.Test;
 
 import javax.ejb.embeddable.EJBContainer;
 import javax.naming.Context;
@@ -22,7 +20,7 @@ public class UsuarioServiceTest {
     private UsuarioService usuarioService;
     private PersonaService personaService;
 
-    @Before
+  //  @Before
     public void setUp() throws Exception {
         System.out.println("Iniciando EJB Container");
 
@@ -35,7 +33,7 @@ public class UsuarioServiceTest {
         personaService = (PersonaService) context.lookup("java:global/classes/PersonaServiceImpl!com.danjerous.sga.servicio.PersonaService");
     }
 
-    @Test
+  //  @Test
     public void testListarUsuario() {
         System.out.println("Iniciando Test EJB Usuario Service");
 
@@ -52,7 +50,7 @@ public class UsuarioServiceTest {
         usuarios.forEach(System.out::println);
     }
 
-    @Test
+   // @Test
     public void testAgregarUsuario() {
         System.out.println("Iniciando test agregar persona");
 
@@ -74,7 +72,7 @@ public class UsuarioServiceTest {
         desplegarUsuarios(usuarioService.findAll());
     }
 
-    @Test
+   // @Test
     public void actualizarUsuario() {
         System.out.println("Iniciando prueba actualizar");
 
