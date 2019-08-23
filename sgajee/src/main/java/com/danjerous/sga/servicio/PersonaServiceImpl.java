@@ -5,10 +5,12 @@ import com.danjerous.sga.eis.PersonaDAO;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.jws.WebService;
 import java.util.List;
 
 @Stateless
-public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService {
+@WebService(endpointInterface = "com.danjerous.sga.servicio.PersonaServiceWS")
+public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService, PersonaServiceWS {
 
     @EJB
     private PersonaDAO personaDAO;

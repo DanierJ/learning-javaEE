@@ -1,6 +1,9 @@
 package com.danjerous.sga.domain;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Objects;
@@ -8,6 +11,7 @@ import java.util.Objects;
 
 @Entity
 @NamedQueries({@NamedQuery(name = "Persona.findAll", query = "SELECT p FROM Persona p ORDER BY p.idPersona")})
+@XmlAccessorType(XmlAccessType.FIELD) // para indicar que todos los campos del objeto forman parte de la informacion regresada
 @Table(name = "persona")
 public class Persona implements Serializable {
 
@@ -32,6 +36,7 @@ public class Persona implements Serializable {
     @Column(nullable = false, length = 30)
     private String telefono;
 
+    @XmlTransient
     @OneToMany(mappedBy = "persona")
     private Collection<Usuario> usuarios;
 
