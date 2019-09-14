@@ -3,6 +3,8 @@ package com.danjerous.sga.servicio;
 import com.danjerous.sga.domain.Persona;
 import com.danjerous.sga.eis.PersonaDAO;
 
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.jws.WebService;
@@ -10,11 +12,14 @@ import java.util.List;
 
 @Stateless
 @WebService(endpointInterface = "com.danjerous.sga.servicio.PersonaServiceWS")
+@DeclareRoles({"ROLE_ADMIN", "ROLE_USER"})
+@RolesAllowed({"ROLE_ADMIN", "ROLE_USER"})
 public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService, PersonaServiceWS {
 
     @EJB
     private PersonaDAO personaDAO;
 
+    @RolesAllowed("ROLE_ADMIN")
     @Override
     public List<Persona> listarPersonas() {
         return personaDAO.findAll();
